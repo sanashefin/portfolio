@@ -1,0 +1,249 @@
+                        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+                        * {
+                            margin: 0;
+                            padding: 0;
+                            font-family: JetBrains Mono;
+                        }
+                        
+                        header {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            position: fixed;
+                            width: 100%;
+                            right: 0;
+                            top: 0;
+                        }
+                        
+                        #logo {
+                            margin-left: 40px;
+                        }
+                        
+                        nav a {
+                            color: black;
+                            font-weight: bold;
+                            text-decoration: none;
+                            margin: 0px 10px;
+                        }
+                        
+                        nav a:hover {
+                            color: brown;
+                            text-decoration: underline;
+                        }
+                        
+                        #home {
+                            display: flex;
+                            align-items: center;
+                            margin-top: 100px;
+                        }
+                        
+                        .home-section {
+                            height: 450px;
+                            width: 50%;
+                        }
+                        
+                        #home-text {
+                            margin: 150px 0px 0px 50px;
+                        }
+                        
+                        #fname {
+                            font-family: Dancing Script;
+                            font-size: 60px;
+                        }
+                        
+                        #lname {
+                            color: brown;
+                            font-family: Dancing script;
+                        }
+                        
+                        #home-text p {
+                            margin: 20px 0px;
+                            line-height: 0.7cm;
+                        }
+                        
+                        #dwnld {
+                            background-color: black;
+                            color: white;
+                            font-weight: bold;
+                            padding: 5px;
+                            text-decoration: none;
+                            border-radius: 5%;
+                        }
+                        
+                        #images {
+                            position: relative;
+                        }
+                        
+                        .home-images {
+                            width: 60%;
+                            position: absolute;
+                            top: 30px;
+                            transition: 2s;
+                        }
+                        
+                        #images:hover #shape {
+                            transform: translateY(-30px);
+                        }
+                        
+                        #images:hover #girl {
+                            transform: translateX(-30px);
+                        }
+                        
+                        .section-head {
+                            text-align: center;
+                        }
+                        
+                        .main-head {
+                            font-family: Dancing script;
+                            font-size: 40px;
+                        }
+                        
+                        .sub-head {
+                            font-family: Dancing script;
+                            color: green;
+                            font-size: 40px;
+                        }
+                        
+                        #about-content {
+                            display: flex;
+                            align-items: center;
+                            gap: 20px;
+                            padding: 0px 20px;
+                        }
+                        
+                        #about-text p {
+                            line-height: 0.8cm;
+                            font-size: 18px;
+                            text-align: justify;
+                        }
+                        
+                        .info {
+                            margin: 10px 0px;
+                        }
+                        
+                        .info span {
+                            margin-left: 5px;
+                            font-weight: bold;
+                        }
+                        
+                        #skill-content {
+                            display: grid;
+                            grid-template-columns: repeat(2, 1fr);
+                            margin: 40px;
+                            gap: 30px;
+                            align-items: center;
+                        }
+                        
+                        .bar {
+                            display: flex;
+                            justify-content: space-between;
+                            padding: 20px 0px;
+                            position: relative;
+                        }
+                        
+                        .base-bar {
+                            height: .6rem;
+                            background-color: rgb(1, 5, 59);
+                            border-radius: .5rem;
+                            position: absolute;
+                            width: 100%;
+                            bottom: 0;
+                            gap: 30px;
+                        }
+                        
+                        #html-bar {
+                            background-color: rgb(125, 96, 172);
+                            width: 97%;
+                        }
+                        
+                        #css-bar {
+                            background-color: rgb(125, 96, 172);
+                            width: 90%;
+                        }
+                        
+                        #react-bar {
+                            background-color: rgb(125, 96, 172);
+                            width: 88%;
+                        }
+                        
+                        #next-bar {
+                            background-color: rgb(125, 96, 172);
+                            width: 82%;
+                        }
+                        
+                        #icon-collection {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin: 30px 0px;
+                        }
+                        
+                        .icon {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            height: 40px;
+                            width: 40px;
+                            margin: 0px 10px;
+                            border-radius: 50%;
+                            background-color: rgb(152, 131, 12);
+                        }
+                        
+                        .social {
+                            color: black;
+                        }
+                        
+                        .social :hover {
+                            color: white;
+                        }
+                        
+                        .icon:hover {
+                            background-image: linear-gradient(to bottom right, white, yellow, orange, blue);
+                            animation: rotate 3s;
+                        }
+                        
+                        footer p {
+                            text-align: center;
+                            font-weight: bold;
+                            margin-bottom: 40px;
+                        }
+                        
+                        #up-arrow {
+                            float: right;
+                            margin: -80px 10 10px 0px;
+                        }
+                        
+                        html {
+                            scroll-behavior: smooth;
+                        }
+                        
+                         ::-webkit-scrollbar {
+                            width: 10px;
+                        }
+                        
+                         ::-webkit-scrollbar-thumb {
+                            background-color: rgb(152, 131, 12);
+                            border-radius: 10px;
+                        }
+                        
+                         ::-webkit-scrollbar-track {
+                            background-color: black;
+                        }
+                        
+                        @keyframes rotate {
+                            0% {
+                                transform: rotate(30deg);
+                            }
+                            25% {
+                                transform: rotate(-30deg);
+                            }
+                            50% {
+                                transform: rotate(30deg);
+                            }
+                            75% {
+                                transform: rotate(-30deg);
+                            }
+                            100% {
+                                transform: rotate(-30deg);
+                            }
+                        }
